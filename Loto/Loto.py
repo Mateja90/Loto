@@ -2,15 +2,16 @@ import random
 
 def ponovitev(st):
     seznam = []
+    st=range(st)
     x=0
-    while x in range(st):
+    while x in st:
         rand = random.randint(0, 99)
         if rand not in seznam:
             seznam.append(rand)
             x +=1
-
         else:
-            x+=1
+            continue
+
 
 
     return seznam
